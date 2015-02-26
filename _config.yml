@@ -1,0 +1,19 @@
+# Site settings
+title: Casper Beyer
+email: caspervonb@qup.io
+description: >
+
+baseurl: ""
+url: "https://caspervonb.github.io"
+
+twitter: caspervonb
+github:  caspervonb
+
+analytics: UA-48351156-1
+permalink: /:categories/:title/
+
+# Build settings
+markdown: kramdown
+
+gems:
+- jekyll-sitemap
