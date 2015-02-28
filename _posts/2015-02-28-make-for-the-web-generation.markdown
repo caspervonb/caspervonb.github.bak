@@ -96,7 +96,7 @@ OPTFLAGS      =
 # our optimizer, we will however do some simple substitution to
 # get a target has a "min" suffix.
 $(DIST:%.js=$(DIST).min.js): $(DIST)
-  $(UGL) UGLFLAGS -o $< $@
+  $(OPT) OPTFLAGS -o $< $@
 ```
 
 [grunt]: http://gruntjs.com/ "Grunt"
