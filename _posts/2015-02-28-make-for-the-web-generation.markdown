@@ -33,8 +33,9 @@ This does is a shell invocation of [cp(1)](cp), with a couple of [automatic vari
 Coffeescript, Typescript, or modern JavaScript transpilers like [babel][babel] are pretty common nowdays, so we'll compile our library from modern JavaScript to something that can be consumed today with [babel][babel] as our first example. To do this we will need to define a rule that does a one to one conversion between source files and output files.
 
 ```make
-# First we will assign a variable to our JavaScript compiler, babel in this case.
-# This is not strictly nesscescary but makes maintance a little easier.
+# First we will assign a variable to our JavaScript compiler,
+# babel in this case. While this is not strictly nesscescary it
+# makes maintance a little easier.
 JC            = babel
 
 # We'll enable loose transformations
@@ -43,7 +44,8 @@ JCFLAGS       = --loose
 # Next we'll find all the source files in our source directory
 SRC           = shell(find src -name "*.js")
 
-# And then do substitution to get strings that map 1:1 to the source files in the library directory
+# And then do substitution to get strings that map one to one from
+# the source directory to the library directory
 LIB           = $(SRC:src/%.js=lib/%.js)
 
 # Finally, we'll define our rule to convert from source to library
