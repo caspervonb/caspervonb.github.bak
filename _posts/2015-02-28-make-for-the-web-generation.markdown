@@ -5,18 +5,18 @@ categories: javascript tools
 ---
 
 ## Introduction
-JavaScript has provided us with a giant explosion of build tools, [grunt][grunt], [gulp][gulp], [slush][slush], [broccoli][broccoli] and [brunch][brunch] just to name a few of the more popular ones, there too many to name them all.
+JavaScript has provided us with a giant explosion of build tools, [grunt][grunt], [gulp][gulp], [slush][slush], [broccoli][broccoli] and [brunch][brunch] just to name a few of the more popular ones, there is just way to many to name them all.
 
 More or less these tools all depend on plugins to do even the simplest of tasks, from copying a file to creating an archive, you'll need a plugin for it.
 
-While, in theory this leads to great flexibility, this also quickly leads to your project having a big bundle of development dependencies, and the tasks you are doing are just run-of-the-mill ordinary copying, building, bundling and minification.
+While, in theory this leads to great flexibility, in reality we are just duplicating the unix ecosystem. This also quickly leads to your project having a big bundle of development dependencies, and the tasks you are doing are just run-of-the-mill ordinary copying, building, bundling and minification.
 
 ## Introducing Make
 Make is a pretty old tool, and for most developers coming from a native development background it is an old friend, but most web developers that don't come from a computer science background don't really seem to ever get introduced to it. However, that does not mean *make* is not a good tool, in-fact its far too underrated these days.
 
 You have the entire unix ecosystem available to you, pipes, streams, utilities, it's all there, most of the tools you'll need to build are already on the system. If you are developing on a non-unix machine like Windows, then you should at least do yourself a favor and install a proper shell and a minimal bundle of tools like [gow][gow], perhaps a better terminal emulator to replace `cmd.exe` as-well, like [cmder][cmder].
 
-Make works by defining rules in a file typically called `Makefile`, no file extension, capitalization matters. Rules are made up from targets and prerequisites, which can have shell commands executed upon them, which is usually referred to as the recipe.
+Make works by defining rules in a file typically called `Makefile`, no file extension, and do take note that capitalization matters. Rules are made up from targets and prerequisites, which can have shell commands executed upon them, which is usually referred to as the recipe.
 
 In general a rule looks something like this:
 ```make
@@ -107,6 +107,11 @@ OPTFLAGS      =
 $(DIST:%.js=$(DIST).min.js): $(DIST)
   $(OPT) OPTFLAGS -o $< $@
 ```
+
+## Conclusion
+Make has a bit of a undeserved reputation for being hard to understand, it is not that different from shell scripting. In my opinion the syntax is clear and concise, you get free interop with everything, it has streaming, it has pipes, it has a big ecosystem called *unix*, so with that said. **Viva la revolución, write a makefile today!**
+
+Feel free to hate on make at me via [@caspervonb on Twitter](http://twitter.com/caspervonb)
 
 [grunt]: http://gruntjs.com/ "Grunt"
 [gulp]: http://gulpjs.com/ "Gulp"
