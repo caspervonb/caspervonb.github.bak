@@ -53,8 +53,7 @@ it has to be launched with remote debugging enabled.
 For Google Chrome, the remote debugging port has to be specified,
 one can do this by appending `--remote-debugging-port=<PORT>` when launching chrome.
 
-If you want Amok to spawn the client for you, the `BROWSER` environment variable to a value which will make Amok spawn
-it pointing at the server host and port after the server has started listening.
+If you want Amok to spawn the client for you, set the `BROWSER` environment variable to a value which will make Amok spawn it pointing at the server host and port after the server has started listening.
 
 For easier usage, you can store this value in your user shell resource file.
 
