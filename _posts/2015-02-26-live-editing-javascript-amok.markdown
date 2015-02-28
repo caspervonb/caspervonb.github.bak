@@ -80,6 +80,7 @@ BUNDLER="watchify"
 ```
 BUNDLER="babel --watch"
 ```
+On invoking the amok command, any command line options after the parsing stop delimeter `--` will be passed through to the bundler.
 
 ## Comparing with other tools
 So how does Amok differ from other tools out there at the moment?
@@ -89,6 +90,6 @@ So how does Amok differ from other tools out there at the moment?
 <iframe width="800" height="450" src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 LiveReload does a pretty good job at dealing with web sites, but not applications.
-It can't to live editing, only live reloading, it's essentially like having someone sitting behind you hitting the refresh button for you.
+Despite popular misconception it cannot do live editing, only live reloading, it's essentially like having someone sitting behind you hitting the refresh button for you.
 
-Currently, Amok does not deal with CSS or HTML, so you may still want to stick to LiveReload for applying HTML and CSS changes.
+However, you may still want to keep LiveReload around and run it in cooperation with Amok. Because currently Amok does not deal with CSS or HTML, so you may still want to stick to LiveReload for applying HTML and CSS changes.
