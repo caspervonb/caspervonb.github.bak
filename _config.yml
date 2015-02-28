@@ -13,7 +13,7 @@ analytics: UA-48351156-1
 permalink: /:categories/:title/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 gems:
 - jekyll-sitemap
