@@ -18,7 +18,11 @@ running and continue running after editing without having to reload nor loosing 
 
 Luckily, there's a brand new tool for doing just that called Amok.
 
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/xHXqyfkct2w" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/xHXqyfkct2w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+The neat thing about Amok is that it connects to the client through a debugging session, so there are no special hacks or tricks. It's just how the runtime works, that being the case it can work with any kind of javascript application, including react.
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/-aWINzxCNW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Getting Amok
 
@@ -82,7 +86,7 @@ So how does Amok differ from other tools out there at the moment?
 
 ### LiveReload
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RcOFZ_zZOmU" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 LiveReload does a pretty good job at dealing with web sites, but not applications.
 It can't to live editing, only live reloading, it's essentially like having someone sitting behind you hitting the refresh button for you.
