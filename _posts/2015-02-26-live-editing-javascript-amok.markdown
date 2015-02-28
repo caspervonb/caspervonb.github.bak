@@ -80,7 +80,14 @@ BUNDLER="watchify"
 ```
 BUNDLER="babel --watch"
 ```
-On invoking the amok command, any command line options after the parsing stop delimeter `--` will be passed through to the bundler.
+
+Any command line options after the options stop delimeter `--` will be passed through to the bundler.
+For example to invoke watchify with coffeeify
+
+```
+export BUNDLER="watchify"
+amok app.js -- -t coffeeify
+```
 
 ## Comparing with other tools
 So how does Amok differ from other tools out there at the moment?
