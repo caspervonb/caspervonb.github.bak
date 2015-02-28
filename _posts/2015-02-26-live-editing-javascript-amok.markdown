@@ -45,7 +45,7 @@ it should **just work** out of the box. Just pass in your entry points as argume
 amok mydep.js myapp.js
 ```
 
-## Configuring your browser to work with Amok
+## Configuring Your Browser to Work with Amok
 
 Amok works out of the box, but your browser
 however does need a little configuration to coooperate with Amok,
@@ -67,7 +67,7 @@ For easier usage, you can store this value in your user shell resource file.
 BROWSER="google-chrome --remote-debugging-port=9222"
 ```
 
-## Configuring your bundler to work with Amok
+## Configuring Your Bundler to Work with Amok
 Amok works with a variety of bundlers, just set the `BUNDLER` environment
 variable and Amok will use it to process your bundle.
 
@@ -89,7 +89,7 @@ export BUNDLER="watchify"
 amok app.js -- -t coffeeify
 ```
 
-## Comparing with other tools
+## Comparing with Other Tools
 So how does Amok differ from other tools out there at the moment?
 
 ### LiveReload
