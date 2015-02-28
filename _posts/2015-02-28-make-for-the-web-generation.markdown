@@ -5,37 +5,46 @@ categories: javascript tools
 ---
 
 ## Introduction
-JavaScript has provided with a giant explosion of build tools,
-[grunt][grunt], [gulp][gulp], [slush][slush], [broccoli][broccoli], [brunch][brunch] just to name a few of the more popular ones.
+JavaScript has provided us with a giant explosion of build tools, [grunt][grunt], [gulp][gulp], [slush][slush], [broccoli][broccoli], [brunch][brunch] just to name a few of the more popular ones, there too many to name them all.
 
-These tools more or less all depend on plugins to do even the simplest of tasks,
-from copying a file to creating an achive, you'll need a plugin for it.
+More or less these tools all depend on plugins to do even the simplest of tasks, from copying a file to creating an archive, you'll need a plugin for it.
 
-This quickly leads to your project having a big bundle of development dependencies,
-and the tasks you are doing are just run-of-the-mill ordinary building, bundling and minification.
+While, in theory this leads to great flexibility, this also quickly leads to your project having a big bundle of development dependencies, and the tasks you are doing are just run-of-the-mill ordinary copying, building, bundling and minification.
 
 ## Introducing Make
-Make is a pretty old tool, and for most developers coming from a native development background it's an old friend, but most web developers that don't come from a computer science background don't really seem to ever get introduced to it.
-However, that does not mean *make* is not a good tool, in-fact its far too underrated these days.
+Make is a pretty old tool, and for most developers coming from a native development background it's an old friend, but most web developers that don't come from a computer science background don't really seem to ever get introduced to it. However, that does not mean *make* is not a good tool, in-fact its far too underrated these days.
 
-You have the entire unix ecosystem available to you, pipes, streams, it's all there, most of the tools you'll need to build are already on the system. If you are developing from a non-unix machine like Windows, then you should atleast do yourself a favor and install a proper shell and a minimal bundle of tools like [gow][gow], perhaps a better [terminal emulator][cmder] too.
+You have the entire unix ecosystem available to you, pipes, streams, utilities, it's all there, most of the tools you'll need to build are already on the system. If you are developing on a non-unix machine like Windows, then you should at least do yourself a favor and install a proper shell and a minimal bundle of tools like [gow][gow], perhaps a better terminal emulator to replace `cmd.exe` as-well, like [cmder][cmder].
 
-Make works by defining target rules and prerequisites.
+Make works by defining rules, rules are made up from targets and prerequisites, which can have shell commands executed upon them, which is usually referred to as the recipe.
+
+In general a rule looks something like this:
+```make
+targets: prerequisites
+    recipe
+# Do take note, that is a tab, not spaces.
+```
+
+So with that knowledge, lets do a simple example. We want to copy a file from `input.txt`which is the prerequisite to `output.txt`which is the target. Our recipe will be a simple command line utility.
 
 ```make
 output.txt: input.txt
   cp $< $@
 ```
 
-This does is a shell invocation of [cp(1)](cp), with a couple of [automatic variables][make-automatic-variables], `$@` holds the file name of the target of the rule, `$<` holds the name of the first prerequisite.
+Pretty simple right? This does a shell invocation of [cp(1)](cp), with a couple of [automatic variables][make-automatic-variables], `$@` holds the file name of the target, `$<` holds the name of the first prerequisite.
+
+Lets move on to something more practical.
 
 ## Compiling Your Code
-Coffeescript, Typescript, or modern JavaScript transpilers like [babel][babel] are pretty common nowdays, so we'll compile our library from modern JavaScript to something that can be consumed today with [babel][babel] as our first example. To do this we will need to define a rule that does a one to one conversion between source files and output files.
+Coffeescript, Typescript, or modern JavaScript transpilers like [babel][babel] are pretty common nowadays, so we'll compile our code from modern JavaScript to something that can be consumed today with [babel][babel] as our first example.
+
+To do this we will need to define a rule that does a one to one conversion between the files in our *src* directory, to the transpiled files we want in our *lib* directory.
 
 ```make
 # First we will assign a variable to our JavaScript compiler,
 # babel in this case. While this is not strictly nesscescary it
-# makes maintance a little easier.
+# makes maintenance a little easier.
 JC            = babel
 
 # We'll enable loose transformations
@@ -56,7 +65,7 @@ $(LIB): $(SRC)
 ```
 
 ## Bundling Your Code
-Browserify, Webpack or just plain concatenation is also rather standard if you are going to distribute your code for the browser environment. In order to do this we'll need a rule that has a single target, takes all prerequisites and feeding them to the bundler.
+Browserify, Webpack or just plain concatenation is also a rather standard thing to do if you are going to distribute your code for the browser environment. In order to do this we will need a rule that has a single target, takes all the sources files as prerequisites, feeding them through the bundler as the recipe.
 
 ```make
 # Like before, we will store our bundler in a variable
@@ -69,7 +78,7 @@ BUNDLE        = browserify
 # variable there is no duplication.
 BUNDLEFLAGS   = --transform babelify [$(JCFLAGS)]
 
-# Next we'll define our distrobution filename
+# Next we'll define our bundle filename
 DIST          = dist.js
 
 # Finally we'll define the rule, again the goal is to pass all
@@ -82,7 +91,7 @@ $(DIST): $(SRC)
 ```
 
 ## Optimizing Your Code
-Minification and dead code removal is another, in this case we'll just define a rule that takes the bundle target as a prerequisite and run it through uglify.
+Minification and dead code removal is another common build step. In this case we'll just define a rule that takes the previously defined bundle target as a prerequisite and run it through uglify, we'll do some simple substitution to get our minified bundle name based on the non-minified bundle name.
 
 ```make
 # We will use uglify as our optimizer
