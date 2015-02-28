@@ -175,6 +175,12 @@
     padding: $spacing-unit 0;
 }
 
+.post-content iframe {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 .page-heading {
     font-size: 20px;
 }
