@@ -4,8 +4,6 @@ title: Live Editing JavaScript with Amok
 categories: javascript tools
 ---
 
-<iframe width="100%" height="500px" src="https://www.youtube.com/embed/xHXqyfkct2w" frameborder="0" allowfullscreen></iframe>
-
 ## Introduction
 
 Think about how many times you reload your application when you are developing
@@ -17,6 +15,10 @@ cycle gets really tedious and time consuming.
 
 It would be much better if we could just edit our application live while its
 running and continue running after editing without having to reload nor loosing its state.
+
+Luckily, there's a brand new tool for doing just that called Amok.
+
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/xHXqyfkct2w" frameborder="0" allowfullscreen></iframe>
 
 ## Getting Amok
 
@@ -74,3 +76,15 @@ BUNDLER="watchify"
 ```
 BUNDLER="babel --watch"
 ```
+
+## Comparing with other tools
+So how does Amok differ from other tools out there at the moment?
+
+### LiveReload
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RcOFZ_zZOmU" frameborder="0" allowfullscreen></iframe>
+
+LiveReload does a pretty good job at dealing with web sites, but not applications.
+It can't to live editing, only live reloading, it's essentially like having someone sitting behind you hitting the refresh button for you.
+
+Currently, Amok does not deal with CSS or HTML, so you may still want to stick to LiveReload for applying HTML and CSS changes.
