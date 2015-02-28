@@ -6,7 +6,7 @@ categories: javascript tools
 
 ## Introduction
 JavaScript has provided with a giant explosion of build tools,
-[grunt][tool-grunt], [gulp][tool-gulp], [slush][tool-slush], [broccoli][tool-broccoli], [brunch][tool-brunch] just to name a few of the more popular ones.
+[grunt][grunt], [gulp][gulp], [slush][slush], [broccoli][broccoli], [brunch][brunch] just to name a few of the more popular ones.
 
 These tools more or less all depend on plugins to do even the simplest of tasks,
 from copying a file to creating an achive, you'll need a plugin for it.
@@ -113,4 +113,3 @@ $(DIST:%.js=$(DIST).min.js): $(DIST)
 
 [cp]: http://linux.die.net/man/1/cp "copy files and directories"
 [make-automatic-variables]: https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html "Make: Automatic Variables"
-
