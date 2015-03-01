@@ -47,7 +47,7 @@ Pretty simple right? This does a shell invocation of [cp(1)](cp), with a couple 
 
 Lets move on to something more practical.
 
-## Compiling Your Code
+## Compiling our Code
 
 Coffeescript, Typescript, or modern JavaScript transpilers like [babel][babel] are pretty common nowadays, so we'll compile our code from modern JavaScript to something that can be consumed today with [babel][babel] as our first example.
 
@@ -63,20 +63,23 @@ JC            = babel
 JCFLAGS       = --loose
 
 # Next we'll find all the source files in our source directory
-SRC           = shell(find src -name "*.js")
+SRC           = $(shell find src -name "*.js")
 
 # And then do substitution to get strings that map one to one from
 # the source directory to the library directory
 LIB           = $(SRC:src/%.js=lib/%.js)
 
 # Finally, we'll define our rule to convert from source to library
-# Which is to invoke the compiler with the options and prerequiresite,
-# then output to the target.
+# Which is to invoke the compiler with the options and prerequisites
+# we've already defined and output to the target name.
 $(LIB): $(SRC)
+  mkdir -p $(@D)
   $(JC) $(JCFLAGS) $< -o $@
 ```
 
-## Bundling Your Code
+It's all very similar to bash scripting, `$(VARIABLE)` does variable expansion and `$(@D)` is another automatic variable, it holds the directory part of the file name of the target.
+
+## Bundling our Code
 Browserify, Webpack or just plain concatenation is also a rather standard thing to do if you are going to distribute your code for the browser environment. In order to do this we will need a rule that has a single target, takes all the sources files as prerequisites, feeding them through the bundler as the recipe.
 
 ```make
@@ -99,31 +102,43 @@ DIST          = dist.js
 # but generally this would yield a slightly bigger file
 # since compilers often generate helpers.
 $(DIST): $(SRC)
-  $(BUNDLE) $(JCFLAGS) -o $@ $^
+  $(BUNDLE) $(BUNDLEFLAGS) -o $@ $^
 ```
 
-## Optimizing Your Code
+## Optimizing our Code
 
 Minification and dead code removal is another common build step. In this case we'll just define a rule that takes the previously defined bundle target as a prerequisite and run it through uglify, we'll do some simple substitution to get our minified bundle name based on the non-minified bundle name.
 
 ```make
-# We will use uglify as our optimizer
-OPT           = uglify
+DIST_MIN			= dist.min.js
 
-# No flags, just yet atleast.
-OPTFLAGS      = 
+# Using uglifyjs as our minifier
+MIN                 = uglifyjs
+
+# No flags, just yet at least.
+MINFLAGS            = 
 
 # This rule will be really simple.
-# It's a single target with a single prerequisite passed through
-# our optimizer, we will however do some simple substitution to
-# get a target has a "min" suffix.
-$(DIST:%.js=$(DIST).min.js): $(DIST)
-  $(OPT) OPTFLAGS -o $< $@
+# It's a single target with a single prerequisite passed through our optimizer
+$(DIST_MIN): $(DIST)
+  $(MIN) $(MINFLAGS) $< -o $@
+```
+
+## Cleaning our build
+Make also has a [special target][make-special-targets] called `.PHONY`, the prerequisites of this special target are considered to be phony targets. Make will run the recipie of such a target unconditionally, regardless of whether a file with that name exists or what its last-modification time was, it's useful in cases where we want to run a script like task regardless of what files have been generated, for example if we need to clean our build.
+
+```make
+clean:
+  rm $(LIB)
+  rm $(DIST)
+  rm $(DIST_MIN)
 ```
 
 ## Conclusion
 
 Make has a bit of a undeserved reputation for being hard to understand, it is not that different from shell scripting. In my opinion the syntax is clear and concise, you get free interop with everything, it has streaming, it has pipes, it has a big ecosystem called *unix*, so with that said. **Viva la revolución, write a makefile today!**
+
+[Get the source for this article][gist-makefile]
 
 Feel free to hate on make at me via [@caspervonb on Twitter](http://twitter.com/caspervonb)
 
@@ -141,3 +156,6 @@ Feel free to hate on make at me via [@caspervonb on Twitter](http://twitter.com/
 
 [cp]: http://linux.die.net/man/1/cp "copy files and directories"
 [make-automatic-variables]: https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html "Make: Automatic Variables"
+[make-special-targets]: https://www.gnu.org/software/make/manual/html_node/Special-Targets.html "Make Special Targets"
+
+[gist-makefile]: http://git.io/x8Kv
