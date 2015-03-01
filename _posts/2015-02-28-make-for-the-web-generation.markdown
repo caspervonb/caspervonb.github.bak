@@ -3,6 +3,13 @@ layout: post
 title: Make for the Web Generation
 categories: javascript tools
 excerpt: JavaScript has provided us with a giant explosion of build tools, grunt, gulp, slush, broccoli and brunch just to name a few of the more popular ...
+
+related_books:
+  - title: Managing Projects with GNU Make
+    asin: 0596006101
+
+  - title: Learning the bash Shell
+    asin: 0596009658
 ---
 
 ## Introduction
