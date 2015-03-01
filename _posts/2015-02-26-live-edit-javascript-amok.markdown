@@ -2,6 +2,8 @@
 layout: post
 title: Live Edit JavaScript with Amok
 categories: javascript tools
+redirect_from:
+  - /javascript/tools/live-editing-javascript-amok/
 ---
 
 ## Introduction
