@@ -18,6 +18,14 @@ text-align: start;
   margin-bottom: 1em;
 }
 
+@media screen and (min-width: 1400px) {
+  .site-floating-advert {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+  }
+}
+
 .site-icon {
   float: left;
   margin-right: 35px;
