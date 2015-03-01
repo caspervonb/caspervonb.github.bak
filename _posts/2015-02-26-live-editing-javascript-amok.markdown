@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Live Editing JavaScript with amok
+title: Live Editing JavaScript with Amok
 categories: javascript tools
 ---
 
