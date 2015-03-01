@@ -19,6 +19,7 @@ You have the entire unix ecosystem available to you, pipes, streams, utilities, 
 Make works by defining rules in a file typically called `Makefile`, no file extension, and do take note that capitalization matters. Rules are made up from targets and prerequisites, which can have shell commands executed upon them, which is usually referred to as the recipe.
 
 In general a rule looks something like this:
+
 ```make
 targets: prerequisites
     recipe
