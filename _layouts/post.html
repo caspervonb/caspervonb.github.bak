@@ -17,7 +17,7 @@ layout: default
       <div class='related-books'>
         <h2>Related Books</h2>
         {% for book in page.related_books %}
-        <a href="http://amazon.com/exec/obidos/ASIN/{{book.asin}}/{{site.amazon}}">
+        <a href="http://amazon.com/exec/obidos/ASIN/{{book.asin}}/?tag={{site.amazon}}">
           <h3 class='book-title'>{{ book.title }}</h3>
         </a>
        {% endfor %}
