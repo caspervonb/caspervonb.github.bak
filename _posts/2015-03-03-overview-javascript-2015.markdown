@@ -300,4 +300,4 @@ var y = 2;
 console.log(`${ x } + ${ y } = ${ x + y}`); // => "1 + 2 = 3"
 ```
 
-[compile-modern-javascript-with-babel]: /javascript/tools/compile-modern-javascript-babel/
+[compile-modern-javascript-with-babel]: /javacript/tools/compile-modern-javascript-babel/
