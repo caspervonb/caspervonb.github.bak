@@ -1,19 +1,25 @@
 # Site settings
 title: Casper Beyer
-email: caspervonb@qup.io
-description: >
+description: Developer, Dork and Designer
 
 baseurl: ""
 url: "https://caspervonb.github.io"
 
+email: caspervonb@qup.io
+gravatar: 69e75f6897227e93b27154f491b18b43
 twitter: caspervonb
 github:  caspervonb
 
 amazon: caspbeye-20
 analytics: UA-48351156-1
+disqus: caspervonb
+
 permalink: /:categories/:title/
 
 # Build settings
+paginate: 5
+paginate_path: "/page:num"
+
 markdown: redcarpet
 gems:
   - jekyll-sitemap
