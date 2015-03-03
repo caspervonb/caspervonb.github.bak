@@ -141,9 +141,7 @@ var { radius, elasticity, deflated } = ball;
 
 
 ### Iterators
-Iterators allow iteration over arbitrary objects, any object can be an iterator as long as it defines a `next()` method, any object can be iterable as long as it defines an `iterator()` method.
-
-Example:
+Iterators allow iteration over arbitrary objects, while this is not strictly a language feature, rather a protocol/pattern. any object can be an iterator as long as it defines a `next()` method, any object can be iterable as long as it defines  an ` @@iterator` method, e.g via `Symbol.iterator`.
 
 ```javascript
 function RangeIterator(min, max) {
