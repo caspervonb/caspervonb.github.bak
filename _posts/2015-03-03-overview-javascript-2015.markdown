@@ -22,6 +22,8 @@ ECMAScript 2015 (previously known as ECMAScript 6) is the upcoming version of th
 
 This edition of JavaScript introduces a lot of new language features, it might even be the most feature packed revision to date in terms of language additions, and that is with some of the features scheduled, like comprehensions and rest and spread properties being delayed to the next edition.
 
+These features are also backwards compatible, in the sense that they are mostly syntatic sugar and can be de-sugared to older versions of the language, meaning we can use them right now [with a compiler like babel][compile-modern-javascript-with-babel]
+
 ### Arrow Functions
 
 Arrow functions are a function shorthand using the `=>` syntax. However, unlike normal functions however, arrows share the same lexical `this` as their surrounding code.
@@ -292,3 +294,5 @@ var x = 1;
 var y = 2;
 console.log(`${ x } + ${ y } = ${ x + y}`); // => "1 + 2 = 3"
 ```
+
+[compile-modern-javascript-with-babel]: /javascript/compile-modern-javascript-babel/
