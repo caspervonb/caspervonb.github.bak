@@ -36,8 +36,9 @@ amok canvas_demo.js
 ```
 
 See the video for a short demonstration:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/xHXqyfkct2w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
+<div class="embed-container">
+<iframe src="https://www.youtube.com/embed/xHXqyfkct2w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Configuring the Browser 
 
@@ -85,8 +86,9 @@ Any command line options after the options stop delimeter `--` will be passed th
 export BUNDLER = "watchify"
 amok app.js -- --transform reactify
 ```
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/-aWINzxCNW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class='embed-container'>
+<iframe src="https://www.youtube.com/embed/-aWINzxCNW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Comparisons
 > If you feel any of the comparisons are biased, please ping me via [@caspervonb on Twitter](http://twitter.com/caspervonb)
@@ -100,7 +102,9 @@ Livereload does a pretty good job at dealing with web sites, but not application
 However, you may still want to keep livereload around and run it in cooperation with amok. Because currently amok does not deal with CSS or HTML, so you may still want to stick to livereload for applying HTML and CSS changes.
 
 See the video for a short side by side comparison:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class='embed-container'>
+<iframe src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 [amok]: https://github.com/caspervonb/amok/ "Amok"
 [wikipedia-side-effects]: http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 
