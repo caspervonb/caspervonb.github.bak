@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Compile Modern JavaScript with Babel
+excerpt: Babel (formerly known as 6to5) is a rather new a source to source compiler that aims to compile the latest, and next versions of the JavaScript language down to code that can run on the runtimes of today
 categories:
   - javacript
   - tools
