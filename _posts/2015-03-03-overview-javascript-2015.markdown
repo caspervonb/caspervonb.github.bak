@@ -27,6 +27,7 @@ This edition of JavaScript introduces a lot of new language features, it might e
 Arrow functions are a function shorthand using the `=>` syntax. However, unlike normal functions however, arrows share the same lexical `this` as their surrounding code.
 
 For example, previously with a normal function we would have to capture the value of `this`
+
 ```js
 this.message = 'hello world';
 var that = this;
@@ -37,13 +38,15 @@ process.nextTick(function() {
 ```
 
 Using an arrow function we can now drop that entirely
+
 ```js
 process.nextTick(() => {
   console.log(this.message);
 });
 ```
 
-Having a function body for an arrow function is optional, it may also be an expression so we can make that even more concise 
+Having a function body for an arrow function is optional, it may also be an expression so we can make that even more concise
+
 ```js
 process.nextTick(() => console.log(this.message));
 ```
