@@ -8,6 +8,10 @@ redirect_from:
   - /2014/03/05/ecmascript-6-features-and-tools/
   - /2014/03/05/ecmascript-6-features-and-tools.html
   - /archive/ecmascript6-features-and-tools/
+
+related_books:
+  - title: You Don't Know JS: ES6 & Beyond
+     asin: 1491904240
 ---
 
 ## Introduction
