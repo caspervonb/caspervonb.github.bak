@@ -112,6 +112,7 @@ function f(x, y) {
 ```
 
 We can now simply inline that information in the function parameters
+
 ```js
 function f(x, y=42) {
   return x + y;
@@ -122,6 +123,7 @@ function f(x, y=42) {
 Destructuring assignment allows us to assign parts of an object to several variables at once.
 
 So lets say we have a `ball`,  the ball is defined as
+
 ```js
 var ball = {
   position: [0, 0],
@@ -132,7 +134,8 @@ var ball = {
 ```
 
 Before we had no choice but to extract each value with its own assignment
-```
+
+```js
 var x = ball.position[0];
 var y = ball.position[1];
 var radius = ball.radius;
@@ -152,7 +155,7 @@ var { radius, elasticity, deflated } = ball;
 ### Iterators
 Iterators allow iteration over arbitrary objects, while this is not strictly a language feature, rather a protocol/pattern. any object can be an iterator as long as it defines a `next()` method, any object can be iterable as long as it defines  an ` @@iterator` method, e.g via `Symbol.iterator`.
 
-```javascript
+```js
 function RangeIterator(min, max) {
    this['iterator'] = function () {
       var current = min;
@@ -176,18 +179,19 @@ The `for-of` loop allows you to conveniently loop over iterable objects.
 
 Example:
 
-```javascript
+```js
 for (let i of new RangeIterator([1, 10])) {
    console.log(i);
 }
 ```
 
 ### Generators
+
 Generators make it easy to create iterators. Instead of tracking state yourself and implementing `iterator`, you just use yield (or yield* to yield each element in an iterator).
 
 Example:
 
-```javascript
+```js
 function *range(min, max) {
    for (var i = min; i < max; i++) {
       yield i;
@@ -200,6 +204,7 @@ for (let value of range(0, 100)) {
 ```
 
 ### Method Definition Shorthand
+
 Method Definition Shorthand is a shorthand syntax for method definitions in object initializers, whereas before we would explicitly state the property name.
 
 ```js
@@ -211,7 +216,8 @@ var obj = {
 ```
 
 We can now infer that from the function name itself
-```
+
+```js
 obj = {
    toString() {
       return 'obj';
@@ -220,6 +226,7 @@ obj = {
 ```
 
 ### Modules
+
 Modules provide declarative syntax for module patterns.
 
 ```js
@@ -289,7 +296,8 @@ a.push(...b); // => [0, 1, 2, 3, 4, 5]
 ```
 
 ### Template Strings
-```javascript
+
+```js
 var x = 1;
 var y = 2;
 console.log(`${ x } + ${ y } = ${ x + y}`); // => "1 + 2 = 3"
