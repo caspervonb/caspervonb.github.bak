@@ -1,8 +1,8 @@
 ---
 layout: post
-title: an Overview of JavaScript in 2015
+title: An Overview of JavaScript in 2015
 categories: javascript
-excerpt: ECMAScript 6 "Harmony" is the upcoming version of the ECMAScript standard, the standard previously ...
+excerpt: ECMAScript 2015 (previously known as ECMAScript 6) is the upcoming version of the ECMAScript standard, the standard ...
 
 redirect_from:
   - /2014/03/05/ecmascript-6-features-and-tools/
