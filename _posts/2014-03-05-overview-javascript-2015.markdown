@@ -246,12 +246,14 @@ function f( x, y ) {
 }
 ```
 
-We can now drop the redundant repetition completely
+We can now leave out the redundant repetition entirely 
+
 ```js
 function f( x, y ) {
   return { x, y };
 }
 ```
+
 ### Rest Parameters
 Rest parameters provides a cleaner way of dealing with variadic functions, that is functions that take a arbitrary number of parameters.
 
