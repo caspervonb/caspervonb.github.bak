@@ -1,4 +1,5 @@
 ---
+published: false
 title: If Traditional Craftsmen Were Interviewed like Developers
 layout: post
 categories: 
@@ -57,6 +58,7 @@ Ever wondered what it could look like if other craftsmen would get the same kind
 *Carpenter: Well, I'm a carpenter, so I have worked with all kinds of wood...*
 
 **Interviewer: Yes, yes, but we're using Pine, are you okay with that?**
+
 *Carpenter: Pine is fine! Whatever you want.*
 
 **Interviewer: What about black pine?**
