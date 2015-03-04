@@ -47,3 +47,25 @@ header {
     @extend %padding-regular;
   }
 }
+
+.media {
+  margin:10px;
+  overflow: hidden;
+  clear: both;
+}
+
+.media-content {
+  overflow:hidden;
+  _overflow:visible;
+  zoom:1;
+}
+
+.media-thumbnail {
+  float:left;
+  margin-right: 10px;
+}
+
+.media-thumbnail img {
+  display: block;
+}
+
