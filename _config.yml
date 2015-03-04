@@ -22,6 +22,7 @@ post_thumbnail: https://cloud.githubusercontent.com/assets/157787/6486649/54d38c
 paginate: 5
 paginate_path: "/page:num"
 
+lsi: true
 markdown: redcarpet
 redcarpet:
   extensions: ['tables', 'no_intra_emphasis', 'autolink', 'with_toc_data']
