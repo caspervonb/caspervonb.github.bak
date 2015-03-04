@@ -33,7 +33,8 @@ Running our application is straight forward,
 amok canvas_demo.js
 ```
 
-See the video for a short demonstration:
+See the video for a short demonstration
+
 <div class="embed-container">
 <iframe src="https://www.youtube.com/embed/xHXqyfkct2w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -84,6 +85,7 @@ Any command line options after the options stop delimeter `--` will be passed th
 export BUNDLER = "watchify"
 amok app.js -- --transform reactify
 ```
+
 <div class='embed-container'>
 <iframe src="https://www.youtube.com/embed/-aWINzxCNW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
