@@ -17,7 +17,7 @@ JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is si
 
 ## Language Features
 
-This edition of JavaScript introduces a lot of new language features, it might even be the most feature packed revision to date in terms of language additions, and that is with some of the features scheduled, like comprehensions and rest and spread properties being delayed to the next edition.
+This sixth edition of JavaScript introduces a lot of new language features, it might even be the most feature packed revision to date in terms of language additions, and that is with some of the features scheduled, like comprehensions and rest and spread properties being delayed to the next edition.
 
 These features are also backwards compatible, in the sense that they are mostly syntatic sugar and can be de-sugared to older versions of the language, meaning we can use them right now [with a compiler like babel][compile-modern-javascript-with-babel]
 
