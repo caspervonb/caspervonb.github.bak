@@ -5,6 +5,12 @@ categories:
   - javascript
 excerpt: JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015.
 
+related_books:
+  - 
+    title: "You Don't Know JS: ES6 & Beyond"
+    thumbnail: https://cloud.githubusercontent.com/assets/157787/6495189/b252357e-c302-11e4-8e5b-057c1df8b79a.jpg
+    excerpt: No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide focuses on the new features that will be available to developers in ECMAScript 6, the newest version of the standard on which JavaScript is built.
+    url: http://amzn.to/1M6NW5d
 
 redirect_from:
   - /2014/03/05/ecmascript-6-features-and-tools/

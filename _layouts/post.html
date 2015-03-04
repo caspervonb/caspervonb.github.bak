@@ -59,9 +59,31 @@ layout: default
       </ul>
     {% endif %}
 
+    {% if page.related_books %}
+      <ul class="post-related">
+        <h3>Related Books</h3>
+
+        {% for book in page.related_books %}
+        <li class="media">
+          <a class="media-thumbnail" href="{{ book.url }}">
+            <img src="{{ book.thumbnail }}" class="image" />
+          </a>
+
+          <span class="media-content">
+            <h4>
+              <a href="{{ book.url }}">{{ book.title }}</a>
+            </h4>
+
+            {{ book.excerpt }}
+          </span>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <ul class="post-related">
       <h3>Related Posts</h3>
-      {% for post in site.related_posts %}
+      {% for post in site.related_posts limit: 5 %}
       <li class="media">
         <a class="media-thumbnail" href="{{ post.url }}">
           {% if post.thumbnail %}
