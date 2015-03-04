@@ -1,5 +1,4 @@
 ---
-published: false
 title: If Traditional Craftsmen Were Interviewed like Developers
 layout: post
 categories: 
