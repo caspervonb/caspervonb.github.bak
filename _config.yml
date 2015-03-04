@@ -16,11 +16,16 @@ disqus: caspervonb
 
 permalink: /:categories/:title/
 
+post_thumbnail: https://cloud.githubusercontent.com/assets/157787/6486649/54d38c26-c2c7-11e4-859e-aa463e68b506.png
+
 # Build settings
 paginate: 5
 paginate_path: "/page:num"
 
 markdown: redcarpet
+redcarpet:
+  extensions: ['tables', 'no_intra_emphasis', 'autolink', 'with_toc_data']
+
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
