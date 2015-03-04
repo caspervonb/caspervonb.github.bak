@@ -24,6 +24,22 @@ layout: default
     data-ad-slot="6035042824" data-ad-format="auto"></ins>
 
   <footer class="post-footer">
+    <ul class="share-buttons">
+      <h3>Share on a Social Network</h3>
+
+      <li>
+        <a class="fa fa-facebook-square fa-2x" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Facebook"></a>
+      </li>
+
+      <li>
+        <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Tweet"></a>
+      </li>
+
+      <li>
+        <a class="fa fa-google-plus-square fa-2x" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Google+"></a>
+      </li>
+    </ul>
+
     {% if site.related_books %}
       <ul class="post-related">
         <h3>Related Books</h3>

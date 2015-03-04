@@ -69,3 +69,36 @@ header {
   display: block;
 }
 
+.share-buttons {
+	list-style: none;
+  text-align: center;
+}
+
+.share-buttons h3 {
+  text-align: left;
+}
+
+.share-buttons li {
+	display: inline-block;
+	margin: 1em;
+}
+
+.share-buttons a,
+.share-buttons a:hover {
+  font-size: 2.75em;
+  text-decoration: none;
+}
+
+.share-buttons a[href*=facebook] {
+  color: #3b5998;
+}
+
+.share-buttons a[href*=twitter] {
+  color: #4099FF;
+}
+
+.share-buttons a[href*=google] {
+  color: #d34836;
+}
+
+
