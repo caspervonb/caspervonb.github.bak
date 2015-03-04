@@ -87,6 +87,7 @@ Ever wondered what it could look like if other craftsmen would get the same kind
 ## The Follow Up
 
 **Interviewer: Hello?**
+
 *Carpenter: Hello. Remember me, We met for an interview a few weeks ago, Just thought i would check in to see if you have made a decision.*
 
 **Interviewer: We have, and thank you for coming in, but we decided to go with someone who has done a lot of work with red.**
