@@ -82,7 +82,7 @@ console.log(PI); // => 3.14159265359
 ```
 
 ### Classes
-Classes are a concise declarative syntax for writing _classical_ object oriented prototype patterns, it has support for inheritance, super calls, instance and static properties and constructors.
+Classes are a concise declarative syntax for writing object oriented prototype patterns with a classical classes approach, the class syntax has support for inheritance, super calls, instance and static properties and constructors.
 
 ```js
 class Monster extends Entity {
