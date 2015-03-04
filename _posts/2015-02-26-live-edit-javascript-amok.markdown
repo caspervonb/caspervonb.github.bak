@@ -10,9 +10,6 @@ redirect_from:
   - /javascript/tools/live-editing-javascript-amok/
 ---
 
-
-## Introduction
-
 Think about how many times we have to reload when we are developing our JavaScript applications. Quite a lot, not to mention the number of times we do it a second time because we weren't sure if we had done it right the first time around since browsers have two or three different modes of refreshing. So once we have our application reloaded, we then have to work our application back into the state we were testing previously, It might not seem like much, but this constant edit, reload and test cycle is really tedious and time consuming.
 
 Our development workflow is completely broken, It would be much better if we could just edit our application live while its running, and have it continue running after editing without having to reload it nor losing its state.
