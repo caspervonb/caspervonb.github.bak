@@ -8,7 +8,8 @@ redirect_from:
   - /2014/03/02/javascript-game-development-managing-game-states.html
 ---
 
-> This article has been archived.
+> This article has been archived and is scheduled for a revision.
+> The information is still good, but my writing skills and style have somewhat evolved since then.
 
 Unlike an application, which typically only has one state of execution where
 you have your data and manipulate it with various tools and operations, games, even
