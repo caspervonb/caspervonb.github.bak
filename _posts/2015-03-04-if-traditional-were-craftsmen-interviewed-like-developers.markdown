@@ -70,7 +70,7 @@ Ever wondered what it could look like if other craftsmen would get the same kind
 
 **Interviewer: Okay great! One more thing, we are using sticky glue to erect the houses, have you used sticky glue to erect a house before?**
 
-*Carpenter: Well.. I've*
+*Carpenter: Well..I have heard some were experimenting with sticky glue but I don't think its a long term solution*
 
 **Interviewer: But other companies are using sticky glue. Are you saying sticky glue does not work?**
 
