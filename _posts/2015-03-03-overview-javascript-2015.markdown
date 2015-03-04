@@ -13,7 +13,7 @@ redirect_from:
 
 ## Introduction
 
-ECMAScript 2015 (previously known as ECMAScript 6) is the upcoming version of the ECMAScript standard, the standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015.
+JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015.
 
 ## Language Features
 
