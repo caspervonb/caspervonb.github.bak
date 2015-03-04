@@ -19,7 +19,8 @@ Our development workflow is completely broken, It would be much better if we cou
 
 Since the code is never re-evaluated but re-compiled instead, [side effects][wikipedia-side-effects] that would be executed from running the script top to bottom will not be executed, think of it as the existing code being hot patched to the new definitions. In a traditional toolset this sort of feature would typically be called *edit and continue*.
 
-To get amok, we need to install it via npm:
+To get amok, we can to install it via npm
+
 ```sh
 npm install amok -g
 ```
