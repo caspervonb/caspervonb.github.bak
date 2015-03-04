@@ -9,7 +9,8 @@ redirect_from:
   - /2014/02/24/javascript-game-development-asynchronous-execution-loop.html
 ---
 
-> This article has been archived.
+> This article has been archived and is scheduled for a revision.
+> The information is still good, but my writing skills and style have somewhat evolved since then.
 
 Obviously one of the core components of any game is the _game loop_. The
 central piece of code that is responsible for balancing the execution of
