@@ -5,7 +5,7 @@ categories:
   - javascript
   - tools
 
-excerpt: More or less these tools all depend on plugins to do even the simplest of tasks, from copying a file to creating an archive, you'll need a plugin for it.
+excerpt: JavaScript has provided us with a giant explosion of build tools, grunt, gulp, slush, broccoli and brunch just to name a few of the more popular ones, there is just way to many to name them all. More or less these tools all depend on plugins to do even the simplest of tasks, from copying a file to creating an archive, you'll need a plugin for it.
 ---
 
 ## Introduction
