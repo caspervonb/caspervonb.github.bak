@@ -57,6 +57,14 @@ Having a function body for an arrow function is optional, it may also be an expr
 process.nextTick(() => console.log(this.message));
 ```
 
+### Binary and Octal Literals
+
+Binary and Octal literals are new forms of numeric literals added for binary and octal numbers, denoted by `b` and `o` respectively.
+```
+0b111110111 === 503 // true
+0o767 === 503 // true
+```
+
 ### Block Scoping
 
 Block scoping are new forms of declaration for defining variables scoped to a single block, as opposed to variables declared with `var` which have a function-level scope.
@@ -190,7 +198,11 @@ var { radius, elasticity, deflated } = ball;
 
 
 ### Iterators
-Iterators allow iteration over arbitrary objects, while this is not strictly a language feature, rather a protocol/pattern. any object can be an iterator as long as it defines a `next()` method, any object can be iterable as long as it defines  an ` @@iterator` method, e.g via `Symbol.iterator`.
+Iterators allow iteration over arbitrary objects, while this by itself is not strictly a language feature, rather a protocol/pattern that is implemented by the core library, it does tie into other language features such as generators and for-for.
+
+The iterator protocol takes the following form, any object can be an iterator as long as it defines a `next()` method.
+
+Any object can be iterable as long as it defines  an ` @@iterator` method, e.g via `Symbol.iterator`.
 
 ```js
 function RangeIterator(min, max) {
@@ -264,27 +276,53 @@ obj = {
 
 ### Modules
 
-Modules provide declarative syntax for module patterns.
+Modules provide declarative syntax for module patterns, this syntax feels a lot like CommonJS modules, but it has some minor semantic differences.
+
+Primarily it handles default exports a little differently. In CommonJS the default export is the actual export object itself, where-as with ECMAScript 6 modules the default export is just another named export that is supported by syntax.
 
 ```js
 export function isEqual(a, b) {
   return a == b;
 }
 
-export function isDeepEqual(a, b) {
-   return a === b;
-}
-
 export default function assert(expression) {
   return expression == true;
 }
-
-assert.deepEquals = deepEquals;
-assert.isEqual = isEqual;
 ```
 
+Named exports are imported via `{ exportName }`
+
 ```js
-import assert, { isEqual } from './assert';
+import { isEqual } from './assert';
+```
+
+The default export can be imported just by specifying any identifier
+
+```js
+import { isEqual } from './assert';
+```
+
+Since the default export is a named export, one could import it that way too.
+
+```js
+import { default } from './assert';
+```
+
+Imports may also be aliased
+
+```js
+import { isEqual as checkEqual } from './assert';
+```
+
+Wilcard imports are also available
+
+```js
+import * as assert from './assert';
+```
+
+Which are mirrored by wildcard exports
+
+```js
 export * from './assert';
 ```
 
@@ -337,9 +375,9 @@ a.push(...b); // => [0, 1, 2, 3, 4, 5]
 Template strings are a new form of string literals, they are multiline and support interpolation through the `${}` syntax.
 
 ```js
-var x = 1;
-var y = 2;
-console.log(`${ x } + ${ y } = ${ x + y}`); // => "1 + 2 = 3"
+`Hello World,
+Today is ${new Date()}
 ```
+
 
 [compile-modern-javascript-with-babel]: /javacript/tools/compile-modern-javascript-babel/
