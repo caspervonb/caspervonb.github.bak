@@ -84,6 +84,39 @@ console.log(PI); // => 3.14159265359
 ### Classes
 Classes are a concise declarative syntax for writing object oriented prototype patterns with a classical classes approach, the class syntax has support for inheritance, super calls, instance and static properties and constructors.
 
+We would typically have written a class as
+
+```js
+var Monster = (function() {
+    function Monster(name) {
+        Entity.call(this);
+        this.name = name;
+    }
+	
+	util.inherits(Monster, Entity);
+	
+    Object.defineProperty(Monster.prototype, "scariness", {
+        get: function () {
+            return 'mild';
+        },
+        enumerable: true,
+        configurable: true
+    });
+	
+    Monster.prototype.speak = function () {
+        Entity.speak.call(this);
+    };
+	
+    Monster.create = function () {
+        return new Monster();
+    };
+	
+    return Monster;
+})();
+```
+
+We can now rewrite with declarative consise syntax
+
 ```js
 class Monster extends Entity {
   constructor(name) {
