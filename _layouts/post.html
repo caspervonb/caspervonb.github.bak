@@ -34,11 +34,19 @@ layout: default
       </li>
 
       <li>
-        <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" title="Tweet"></a>
+        <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" title="Share on Twitter"></a>
       </li>
 
       <li>
         <a class="fa fa-google-plus-square fa-2x" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Google+"></a>
+      </li>
+
+      <li>
+        <a class="fa fa-reddit-square fa-2x" href="http://www.reddit.com/submit?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" title="Submit to Reddit"></a>
+      </li>
+
+      <li>
+        <a class="fa fa-linkedin-square fa-2x" href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title}}&summary={{ page.excerpt }}" target="_blank" title="Share on LinkedIn"></a>
       </li>
     </ul>
 
