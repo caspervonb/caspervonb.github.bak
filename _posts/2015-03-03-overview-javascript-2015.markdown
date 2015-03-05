@@ -334,6 +334,8 @@ a.push(...b); // => [0, 1, 2, 3, 4, 5]
 
 ### Template Strings
 
+Template strings are a new form of string literals, they are multiline and support interpolation through the `${}` syntax.
+
 ```js
 var x = 1;
 var y = 2;
