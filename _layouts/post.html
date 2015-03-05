@@ -50,25 +50,6 @@ layout: default
       </li>
     </ul>
 
-    {% if site.related_books %}
-      <ul class="post-related">
-        <h3>Related Books</h3>
-        {% for post in site.related_books %}
-        <li class="media">
-          <a class="media-thumbnail" href="{{ post.url }}">
-            <img class="related-thumbnail" src="http://placehold.it/140x100" class="image">
-          </a>
-          <span class="media-content">
-            <h4>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </h4>
-            {{ post.excerpt }}
-          </span>
-        </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-
     {% if page.related_books %}
       <ul class="post-related">
         <h3>Related Books</h3>
