@@ -370,11 +370,12 @@ a.push(...b); // => [0, 1, 2, 3, 4, 5]
 
 ### Template Strings
 
-Template strings are a new form of string literals, they are multiline and support interpolation through the `${}` syntax.
+Template strings are a new form of string literals using backticks, they are multiline and support interpolation through the `${}` syntax.
 
 ```js
-`Hello World,
+console.log(`Hello World,
 Today is ${new Date()}
+`);
 ```
 
 ## Core Library
