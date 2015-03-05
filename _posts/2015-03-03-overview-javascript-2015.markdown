@@ -195,18 +195,16 @@ var [x, y] = ball.position;
 var { radius, elasticity, deflated } = ball;
 ```
 
-
-
 ### Iterators
-Iterators allow iteration over arbitrary objects, while this by itself is not strictly a language feature, rather a protocol/pattern that is implemented by the core library, it does tie into other language features such as generators and for-for.
+Iterators allow iteration over arbitrary objects, while this by itself is not strictly a language feature, rather a protocol/pattern that is implemented by the core library, it does tie into other language features such as generators and for-for which work with this pattern.
 
 The iterator protocol takes the following form, any object can be an iterator as long as it defines a `next()` method.
 
-Any object can be iterable as long as it defines  an ` @@iterator` method, e.g via `Symbol.iterator`.
+Any object can be iterable as long as it defines an iterator method, the named of the method is obtained through `Symbol.iterator`, often denoted with `@@iterator`.
 
 ```js
 function RangeIterator(min, max) {
-   this['iterator'] = function () {
+   this[Symbol.iterator] = function () {
       var current = min;
 
       return {
@@ -378,6 +376,15 @@ Template strings are a new form of string literals, they are multiline and suppo
 `Hello World,
 Today is ${new Date()}
 ```
+
+## Core Library
+The core library has also gotten a bunch of additions,  these include but are not limited to promises, proxies, sets, weakmaps, weaksets and typed arrays to name a few.
+
+Existing objects have also been extended, and core objects are now subclassable.
+
+[Check the Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) for further reference.
+
+Remember, you can [compile with babel][compile-modern-javascript-with-babel] to use all of this right now, it's very actively maintained and supports nearly everything.
 
 
 [compile-modern-javascript-with-babel]: /javacript/tools/compile-modern-javascript-babel/
