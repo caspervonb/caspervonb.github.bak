@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git Recipes for the Rest of Us
+categories:
+  - tools
 ---
 
 > Preview, This article is under development
