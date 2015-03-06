@@ -1,13 +1,16 @@
 ---
-title: If Traditional Craftsmen Were Interviewed like Developers
+title: If Laborers Were Interviewed like Developers
 layout: post
 categories: 
   - rant
+
+redirect_from:
+  http://caspervonb.com/javascript/overview-javascript-2015/
 ---
 
-Non-technical people tend to have strong opinions about technology, and what technology to use. Back then Ruby on Rails was starting to see the spotlight, I had a lot of people wanting to switch over their platform with no discernible reason.  No functionality change, I was just porting, at the time I liked rails and needed the work so I didn't really complain. More recently i was brought in as a consultant for a big firm, they had picked an *enterprise ready* pre-packacked CMS for a client but none of their developers knew the CMS, or even the language.
+Non-technical people tend to have strong opinions about technology, and what technology to use. Back then Ruby on Rails was starting to see the spotlight, I had a lot of people wanting to switch over their platform with no discernible reason.  No functionality change, I was just porting, at the time I liked rails and needed the work so I didn't really complain.
 
-Reminds me of the story if a craftsman had the same interview process as developers do, heard a couple of variations on this one, carpenter, mason, plumber, etc.
+These kind of situations arise quite often, and always reminds me that story where a laborer has the same interview process as developers do.
 
 ## The Interview
 **Interviewer: So, you're a carpenter, are you?**
