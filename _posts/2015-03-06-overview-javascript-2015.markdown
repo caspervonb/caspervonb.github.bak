@@ -7,11 +7,15 @@ excerpt: JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript
 
 related_books:
   - 
+    title: "JavaScript: The Good Parts
+    thumbnail: https://cloud.githubusercontent.com/assets/157787/6539252/9f310fe8-c4aa-11e4-9dcb-8aedbb74bc1a.jpg
+    excerpt: Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable, readable, and maintainable than the language as a whole—a subset you can use to create truly extensible and efficient code.
+    url: http://amzn.to/1aRGnE9
+  - 
     title: "You Don't Know JS: ES6 & Beyond"
     thumbnail: https://cloud.githubusercontent.com/assets/157787/6495189/b252357e-c302-11e4-8e5b-057c1df8b79a.jpg
     excerpt: No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide focuses on the new features that will be available to developers in ECMAScript 6, the newest version of the standard on which JavaScript is built.
     url: http://amzn.to/1M6NW5d
-
 redirect_from:
   - /2014/03/05/ecmascript-6-features-and-tools/
   - /2014/03/05/ecmascript-6-features-and-tools.html
