@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Recipies for the Rest of Us
+title: Git Recipes for the Rest of Us
 categories: 
   - tools
 related_books:
@@ -15,6 +15,9 @@ related_books:
     thumbnail: https://images-na.ssl-images-amazon.com/images/I/51yUrziP2fL._SL160_.jpg
     excerpt: Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.
     url: http://amzn.to/1MeXNGg
+
+redirect_from:
+  - /tools/git-recipies-for-the-rest-of-us/
 ---
 
 In this day and age, nearly everyone uses git. From designers to engineers we all depend on it. Despite git being a really good version control system, enevitably we do sometimes mess up and have to fix our configuration and/or working tree, or just plain forget how to do that one thing we rarely do.
