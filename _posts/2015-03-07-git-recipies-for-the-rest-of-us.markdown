@@ -2,17 +2,15 @@
 published: false
 layout: post
 title: Git Recipes for the Rest of Us
-categories:
+categories: 
   - tools
-
-related_books:
-  -
-    title: "Version Control with Git"
-    excerpt: Get up to speed on Git for tracking, branching, merging, and managing code revisions. Through a series of step-by-step tutorials, this practical guide takes you quickly from Git fundamentals to advanced techniques, and provides friendly yet rigorous advice for navigating the many functions of this open source version control system.
-    url: http://amzn.to/1KzEgF5
+related_books: 
+  - title: Version Control with Git
+    excerpt: "Get up to speed on Git for tracking, branching, merging, and managing code revisions. Through a series of step-by-step tutorials, this practical guide takes you quickly from Git fundamentals to advanced techniques, and provides friendly yet rigorous advice for navigating the many functions of this open source version control system."
+    url: "http://amzn.to/1KzEgF5"
 ---
 
-> Preview, This article is under development
+In this day and age, nearly everyone uses git from designers to engineers, and having a good git flow is key, but enevitably we do sometimes mess up and need to clean up our mess before merging or pushing our source tree.
 
 ## Change Message of the Previous Commit
 
