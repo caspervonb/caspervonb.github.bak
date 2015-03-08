@@ -27,7 +27,7 @@ npm install amok -g
 
 ## Running Our Application
 
-Running our application is straight forward, 
+Running our application is straight forward, we just pass the entry points to our application.
 
 ```sh
 amok canvas_demo.js
@@ -42,9 +42,6 @@ See the video for a short demonstration
 ## Configuring the Browser 
 
 The browser needs to be launched with debugging enabled in order to allow amok to connect to it, how we do this varies a bit depending on the browser.
-
-> Currently, Chrome is the only supported client. Need support for Firefox or another client?
->  [Tips allow me to dedicate more time working on amok](https://www.gittip.com/caspervonb)
 
 ### Chrome
 
@@ -90,21 +87,21 @@ amok app.js -- --transform reactify
 <iframe src="https://www.youtube.com/embed/-aWINzxCNW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## Comparisons
-> If you feel any of the comparisons are biased, please ping me via [@caspervonb on Twitter](http://twitter.com/caspervonb)
-
-How does amok compare to other tools?
-
-### Livereload
+## Differences with Livereload
 
 Livereload does a pretty good job at dealing with web sites, but not applications. Despite popular misconception it does not actually do live editing, it does live reloading, it's essentially like having someone sitting behind you hitting the refresh button for you.
 
-However, you may still want to keep livereload around and run it in cooperation with amok. Because currently amok does not deal with CSS or HTML, so you may still want to stick to livereload for applying HTML and CSS changes.
+However, you may still want to keep livereload around and run it in cooperation with amok. Because currently amok does not deal with CSS or HTML, so you may still want to stick to livereload for applying HTML and CSS changes, basically the can augment eachother for a better experience.
 
 See the video for a short side by side comparison:
+
 <div class='embed-container'>
 <iframe src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
+> Amok is a free open source project written and maintained by me, I'm looking to have some funding for it so i can continue it's development while still being able to pay rent.
+> So please consider [supporting development](http://bit.ly/support-amok), even a single dollar is highly appreciated, I really want to give this thing the time it deserves!
+
 [amok]: https://github.com/caspervonb/amok/ "Amok"
 [wikipedia-side-effects]: http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 
+
