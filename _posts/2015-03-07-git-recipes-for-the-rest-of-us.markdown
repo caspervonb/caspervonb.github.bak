@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Recipes for the Rest of Us
+title: Git Recipes for Common Mistakes and Mishaps
 categories: 
   - tools
 related_books:
