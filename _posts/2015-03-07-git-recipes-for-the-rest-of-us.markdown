@@ -20,6 +20,9 @@ redirect_from:
   - /tools/git-recipies-for-the-rest-of-us/
 ---
 
+> Got a recipe that should have been here?
+> Leave a comment below.
+
 In this day and age, nearly everyone uses git. From designers to engineers we all depend on it. Despite git being a really good version control system, enevitably we do sometimes mess up and have to fix our configuration and/or working tree, or just plain forget how to do that one thing we rarely do.
 
 ## Change authentication timeout
@@ -122,5 +125,3 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
-
-> ## Got a git recipie that should have been here? Let me know
