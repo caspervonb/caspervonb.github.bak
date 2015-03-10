@@ -18,6 +18,7 @@ related_books:
     excerpt: No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide focuses on the new features that will be available to developers in ECMAScript 6, the newest version of the standard on which JavaScript is built.
     url: http://amzn.to/1M6NW5d
 redirect_from:
+  - /javascript/overview-javascript-2015/
   - /2014/03/05/ecmascript-6-features-and-tools/
   - /2014/03/05/ecmascript-6-features-and-tools.html
   - /archive/ecmascript6-features-and-tools/
@@ -381,6 +382,11 @@ Template strings are a new form of string literals using backticks, they are mul
 console.log(`Hello World,
 Today is ${new Date()}
 `);
+```
+
+Template strings can also be in the form of tagged template strings, allowing us to prefix the literal with a *tag*, a tag is basically a filter function.
+```js
+console.log(i18n`Hello World`);
 ```
 
 ## Core Library
