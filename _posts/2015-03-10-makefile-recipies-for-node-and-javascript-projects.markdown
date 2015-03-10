@@ -28,7 +28,7 @@ $(LIB): $(SRC)
   tsc $< -o $@
 ```
 
-## Compile Library with Babel
+## Compile with Babel
 
 ```make
 SRC         = $(shell find src -name "*.coffee")
