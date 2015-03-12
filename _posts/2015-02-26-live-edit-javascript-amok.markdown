@@ -15,7 +15,7 @@ Think about how many times we have to reload when we are developing our JavaScri
 Our development workflow is completely broken, It would be much better if we could just edit our application live while its running, and have it continue running after editing without having to reload it nor losing its state.
 
 ## Introducing Amok
-[Amok][amok] is a rather new command line utility that gives us the ability to do live editing of our application, it works by connecting to the browser where our application is already running through a debugging session, so there are no plugins to install, we just have to enable debugging in the target browser by providing it with some flags.
+[Amok][amok] is a rather new command line utility that gives us the ability to do live editing of our application. Since it is a command line utility it is easy to use with any editor or IDE. It works by connecting to the browser where our application is already running through a debugging session, so there are no plugins to install, we just have to enable debugging in the target browser by providing it with some flags.
 
 Since the code is never re-evaluated but re-compiled instead, [side effects][wikipedia-side-effects] that would be executed from running the script top to bottom will not be executed, think of it as the existing code being hot patched to the new definitions. In a traditional toolset this sort of feature would typically be called *edit and continue*.
 
