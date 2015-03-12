@@ -91,8 +91,7 @@ console.log(j); // => error, j is undefined
 
 ```js
 const PI = 3.14159265359;
-PI = 0; // => 0
-console.log(PI); // => 3.14159265359
+PI = 0; // => Error: PI" is read-only
 ```
 
 ### Classes
@@ -371,7 +370,8 @@ The spread operator allows an expression to be expanded in places where multiple
 var a = [0, 1, 2];
 var b = [3, 4, 5];
 
-a.push(...b); // => [0, 1, 2, 3, 4, 5]
+a.push(...b);
+console.log(a.join(' '));
 ```
 
 ### Template Strings
@@ -384,7 +384,8 @@ Today is ${new Date()}
 `);
 ```
 
-Template strings can also be in the form of tagged template strings, allowing us to prefix the literal with a *tag*, a tag is basically a filter function.
+Template strings can also be in the form of tagged template strings, allowing us to prefix the literal with a *tag*. Tags are basically filtering functions that can perform substitutions and string manipulation.
+
 ```js
 console.log(i18n`Hello World`);
 ```
