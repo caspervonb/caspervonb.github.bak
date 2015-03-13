@@ -35,3 +35,4 @@ Babel generates very clean code that almost could be mistaken for handwritten co
 [babel]: http://babeljs.io
 [babel-npm]: http://babeljs.io
 [npm]: https://npmjs.org
+[wikipedia-transpilers]: http://en.wikipedia.org/wiki/Source-to-source_compiler
