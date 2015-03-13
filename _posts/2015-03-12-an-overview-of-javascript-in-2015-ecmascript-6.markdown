@@ -3,7 +3,7 @@ layout: post
 title: An Overview of JavaScript in 2015 (ECMAScript 6)
 categories:
   - javascript
-excerpt: JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015.
+excerpt: JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015, at this point all features have been frozen and specification changes will mostly be editorial nitpicking, so with that in mind lets take a look at what is new in JavaScript in the year 2015.
 
 related_books:
   - 
@@ -24,15 +24,13 @@ redirect_from:
   - /archive/ecmascript6-features-and-tools/
 ---
 
-## Introduction
-
-JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015.
+JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015, at this point all features have been frozen and spesification changes will mostly be editorial nitpicking, so with that in mind lets take a look at what is new in JavaScript in the year 2015.
 
 ## Language Features
 
 This sixth edition of JavaScript introduces a lot of new language syntax features, it might even be the most feature packed revision to date in terms of language additions, and that is with some of the features scheduled, like comprehensions and rest and spread properties being delayed to the next edition.
 
-These features are also backwards compatible, in the sense that they are mostly syntatic sugar and can be de-sugared to older versions of the language, meaning we can use them right now [by compiling with Babel][compile-modern-javascript-with-babel]
+These features are also backwards compatible, in the sense that they are mostly syntactic sugar and can be desugared to older versions of the language, meaning we can use them right now with a source to source compiler (otherwise known as a transpiler).
 
 ### Arrow Functions
 
@@ -397,7 +395,5 @@ Existing objects have also been extended, and core objects are now subclassable.
 
 [Check the Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) for further reference.
 
-Remember, you can [compile with babel][compile-modern-javascript-with-babel] to use all of this right now, it's very actively maintained and supports nearly everything.
-
-
-[compile-modern-javascript-with-babel]: /javacript/tools/compile-modern-javascript-babel/
+## Conclusion
+ECMAScript 6 introduces a lot of convenient new features, and more or less all of them can be backported with a compiler to ECMAScript 5, so you could [compile with babel](/javascript/tools/compile-modern-javascript-babel/) and write using ECMAScript 6 syntax right now.
