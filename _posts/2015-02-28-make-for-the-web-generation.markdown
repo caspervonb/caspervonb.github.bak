@@ -39,7 +39,7 @@ output.txt: input.txt
   cp $< $@
 ```
 
-Pretty simple right? This does a shell invocation of [cp(1)](cp), with a couple of [automatic variables][make-automatic-variables], `$@` holds the file name of the target, `$<` holds the name of the first prerequisite.
+Pretty simple right? This does a shell invocation of [cp(1)][cp], with a couple of [automatic variables][make-automatic-variables], `$@` holds the file name of the target, `$<` holds the name of the first prerequisite.
 
 Lets move on to something more practical.
 
