@@ -21,6 +21,7 @@ redirect_from:
   - /javascript/overview-javascript-2015/
   - /2014/03/05/ecmascript-6-features-and-tools/
   - /2014/03/05/ecmascript-6-features-and-tools.html
+  - /2014/03/05/ecmascript6-features-and-tools.html
   - /archive/ecmascript6-features-and-tools/
 ---
 
