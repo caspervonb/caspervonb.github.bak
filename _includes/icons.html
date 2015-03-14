@@ -6,6 +6,14 @@
 </li>
 {% endif %}
 
+{% if site.feedburner %}
+<li>
+	<a href="https://feeds.feedburner.com/{{ site.feedburner }}" title="{{ site.str_rss_follow }}">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+{% endif %}
+
 {% if site.email %}
 <li>
 	<a href="mailto:{{ site.email }}" title="{{ site.email }}">
