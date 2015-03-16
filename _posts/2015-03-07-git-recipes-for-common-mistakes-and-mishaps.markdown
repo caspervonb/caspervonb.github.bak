@@ -19,6 +19,7 @@ related_books:
 redirect_from:
   - /tools/git-recipies-for-the-rest-of-us/
   - /tools/git-recipes-for-the-rest-of-us/
+  - tools/git-recipes-for-the-common-mistakes-and-mishaps/
 ---
 
 > Got a recipe that should have been here?
