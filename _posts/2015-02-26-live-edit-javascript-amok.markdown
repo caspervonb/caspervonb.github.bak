@@ -99,8 +99,12 @@ See the video for a short side by side comparison:
 <iframe src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-> Amok is a free open source project written and maintained by me, I'm looking to have some funding for it so i can continue it's development while still being able to pay rent.
-> So please consider [supporting development](http://bit.ly/support-amok), even a single dollar is highly appreciated, I really want to give this thing the time it deserves!
+---
+> **Amok is a free open source project developed and maintained by me, I'm a freelance developer and at the end of the day I have to make ends meet and pay my bills.**
+> 
+> **Please consider supporting development via [gratipay](http://gratipay.com/caspervonb), doing so would allow me to dedicate more time to work on Amok.**
+> 
+> **I really think everyone should be developing with this!**
 
 [amok]: https://github.com/caspervonb/amok/ "Amok"
 [wikipedia-side-effects]: http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 
