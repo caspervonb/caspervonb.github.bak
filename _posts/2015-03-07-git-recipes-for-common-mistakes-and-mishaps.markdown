@@ -1,4 +1,5 @@
----
+Hi, I'm Casper, I'm a developer and designer.
+I was getting extremely frustrated with the tools we have today,---
 layout: post
 title: Git Recipes for Common Mistakes and Mishaps
 categories: 
@@ -27,7 +28,7 @@ redirect_from:
 
 In this day and age, nearly everyone uses git. From designers to engineers we all depend on it. Despite git being a really good version control system, enevitably we do sometimes mess up and have to fix our configuration and/or working tree, or just plain forget how to do that one thing we rarely do.
 
-## Change authentication timeout
+## Change Authentication Timeout
 Git can remember your https credentials if you aren't using a ssh key, integrates nicely with the native keychain.
 The default timeout is rather short however, this can be changed via
 
@@ -39,7 +40,7 @@ For a full work day, this could be set to 28800.
 
 ## Change Message of the Previous Commit
 To fix a typo, or other error in the previous commit before pushing to remote,
-we can simply add --append to the git commit command and we will get the editor again.
+we can simply add `--amend` to the commit command and we will get the editor again.
 
 ```sh
 git commit --amend
@@ -60,7 +61,7 @@ git commit --amend
 git reset <filename>
 ```
 
-## Undo the previous commit
+## Undo the Previous Commit
 To undo the most recent commit we can run `git reset HEAD~1`.
 If we pass `--soft` option the working tree will be kept intact letting us
 use `git add` and friends to do the commit again.
@@ -96,8 +97,8 @@ git commit --amend --reset-author
 ```
 
 ## Change Anything Else
-To fix anything else from squashing to re-ordering commits,
-git rebase with the `--interactive` option is the way forward.
+To fix anything else like squashing, removing, rewording and re-ordering commits,
+git rebase with the `--interactive` option provides an interactive cli to do so.
 
 ```sh
 git rebase --interactive
