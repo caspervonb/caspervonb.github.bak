@@ -1,5 +1,4 @@
-Hi, I'm Casper, I'm a developer and designer.
-I was getting extremely frustrated with the tools we have today,---
+---
 layout: post
 title: Git Recipes for Common Mistakes and Mishaps
 categories: 
