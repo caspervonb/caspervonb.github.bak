@@ -100,11 +100,7 @@ See the video for a short side by side comparison:
 </div>
 
 ---
-> **Amok is a free open source project developed and maintained by me, I'm a freelance developer and at the end of the day I have to make ends meet and pay my bills.**
-> 
-> **Please consider supporting development via [gratipay](http://gratipay.com/caspervonb) or [patreon](https://www.patreon.com/caspervonb), doing so would allow me to dedicate a lot more time to work on Amok.**
-> 
-> **I really think everyone should be developing with this, its one of those why the heck did that never exist before kind of tools!**
+> **There is a fundraiser for Amok on [bountysource](https://www.bountysource.com/teams/amok/fundraiser)**
 
 [amok]: https://github.com/caspervonb/amok/ "Amok"
 [wikipedia-side-effects]: http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 
