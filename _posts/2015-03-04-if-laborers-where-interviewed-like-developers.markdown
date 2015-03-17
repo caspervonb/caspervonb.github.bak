@@ -5,7 +5,7 @@ categories:
   - rant
 
 redirect_from:
-  http://caspervonb.com/javascript/overview-javascript-2015/
+  - /rant/if-traditional-were-craftsmen-interviewed-like-developers/
 ---
 
 Non-technical people tend to have strong opinions about technology, and what technology to use. Back then Ruby on Rails was starting to see the spotlight, I had a lot of people wanting to switch over their platform with no discernible reason.  No functionality change, I was just porting, at the time I liked rails and needed the work so I didn't really complain.
