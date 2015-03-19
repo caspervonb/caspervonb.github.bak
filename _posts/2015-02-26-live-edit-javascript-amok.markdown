@@ -93,12 +93,13 @@ However, you may still want to keep livereload around and run it in cooperation 
 
 See the video for a short side by side comparison:
 
-<div class='embed-container'>
+<p class='embed-container'>
 <iframe src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
+</p>
 
 
 ---
 
 [![Support the fundraiser](https://cloud.githubusercontent.com/assets/157787/6731116/4a310ec6-ce7d-11e4-9866-1332f739da4b.png)](https://www.bountysource.com/fundraisers/682-amok-live-editing-javascript)
+
 ---
