@@ -1,6 +1,7 @@
 ---
 title: If Laborers Were Interviewed like Developers
 layout: post
+published: false
 categories: 
   - rant
 
