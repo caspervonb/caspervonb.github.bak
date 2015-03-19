@@ -97,4 +97,8 @@ See the video for a short side by side comparison:
 <iframe src="https://www.youtube.com/embed/RcOFZ_zZOmU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
+
+---
+
 [![Support the fundraiser](https://cloud.githubusercontent.com/assets/157787/6731116/4a310ec6-ce7d-11e4-9866-1332f739da4b.png)](https://www.bountysource.com/fundraisers/682-amok-live-editing-javascript)
+---
