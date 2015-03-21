@@ -103,6 +103,6 @@ See the video for a short side by side comparison:
 
 ---
 
-[![Support the fundraiser](https://cloud.githubusercontent.com/assets/157787/6731116/4a310ec6-ce7d-11e4-9866-1332f739da4b.png)](https://www.bountysource.com/fundraisers/682-amok-live-editing-javascript)
+[![support](https://cloud.githubusercontent.com/assets/157787/6764979/c806eed4-d007-11e4-93fc-b1c5f1a222fb.png)](https://www.bountysource.com/fundraisers/682-amok-live-editing-javascript)
 
 ---
