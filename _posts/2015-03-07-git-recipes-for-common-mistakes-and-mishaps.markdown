@@ -19,7 +19,7 @@ related_books:
 redirect_from:
   - /tools/git-recipies-for-the-rest-of-us/
   - /tools/git-recipes-for-the-rest-of-us/
-  - tools/git-recipes-for-the-common-mistakes-and-mishaps/
+  - /tools/git-recipes-for-the-common-mistakes-and-mishaps/
 ---
 
 In this day and age, nearly everyone uses git. From designers to engineers we all depend on it. Despite git being a really good version control system, enevitably we do sometimes mess up and have to fix our configuration and/or working tree, or just plain forget how to do that one thing we rarely do.
