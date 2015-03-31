@@ -50,6 +50,21 @@ layout: default
       </li>
     </ul>
 
+    <ul class="post-related">
+      <h3>Related Posts</h3>
+      {% for post in site.related_posts limit: 5 %}
+      <li class="media">
+        <span class="media-content">
+          <h4>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h4>
+
+          {{ post.excerpt }}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+
     {% if page.related_books %}
       <ul class="post-related">
         <h3>Related Books</h3>
@@ -72,29 +87,6 @@ layout: default
       </ul>
     {% endif %}
 
-    <ul class="post-related">
-      <h3>Related Posts</h3>
-      {% for post in site.related_posts limit: 5 %}
-      <li class="media">
-        <a class="media-thumbnail" href="{{ post.url }}">
-          {% if post.thumbnail %}
-            <img src="{{ post.thumbnail }}" class="image" />
-          {% else %}
-            <img src="{{ site.post_thumbnail }}" class="image" />
-          {% endif %}
-        </a>
-
-        <span class="media-content">
-          <h4>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h4>
-
-          {{ post.excerpt }}
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-    
     <ins class="adsbygoogle adslot3" data-ad-client="ca-pub-3538270718430385" data-ad-slot="5352451624" data-ad-format="auto"></ins>
 
     <div class="comments">
