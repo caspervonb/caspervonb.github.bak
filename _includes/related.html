@@ -1,0 +1,40 @@
+<ul class="media-list">
+  <h3>Recommended Articles</h3>
+  {% for post in site.related_posts limit: 3 %}
+  <li class="media">
+    <span class="media-left">
+      <img class="media-object" src="{{ post.thumbnail }}">
+    </span>
+
+    <span class="media-body">
+      <h4 class="media-heading">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h4>
+
+      {{ post.excerpt }}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if page.related_books %}
+  <ul class="media-list">
+    <h3>Recommended Books</h3>
+
+    {% for book in page.related_books %}
+    <li class="media">
+      <span class="media-left">
+        <img class="media-object" src="{{ book.thumbnail }}">
+      </span>
+
+      <span class="media-body">
+        <h4 class="media-heading">
+          <a href="{{ book.url }}" target="_blank">{{ book.title }}</a>
+        </h4>
+
+        {{ book.excerpt }}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

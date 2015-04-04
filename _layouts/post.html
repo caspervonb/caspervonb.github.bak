@@ -1,100 +1,71 @@
 ---
 layout: default
 ---
+<article class="post" data-categories="{{ page.categories | join ' ' }}">
+  <header class="post-header">
+    <div class="container">
+      <h1 class="post-title">{{ page.title }}</h1>
 
-<article>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.cover_image }}')">
-    <h1 class="title">{{ page.title }}</h1>
+      <p class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
 
-    <p class="meta">
-    {{ page.date | date: "%B %-d, %Y" }}
+        {% if page.author %}
+          - <span class="post-author">{{ page.author }}</span>
+        {% endif %}
+        {% if page.categories %}
+          in <span class="post-categories">
+            {{ page.categories | join ',' }}
+          </span>
+        {% endif %}
+      </p>
+    </div>
 
-    {% if page.author %}
-      - {{ page.author }}
-    {% endif %}
-    </p>
-    
-    <ins class="adsbygoogle adslot1" data-ad-client="ca-pub-3538270718430385" data-ad-slot="5157004025" data-ad-format="auto"></ins>
+    <ins class="adsbygoogle adslot adslot-1" data-ad-client="ca-pub-3538270718430385" data-ad-slot="5157004025" data-ad-format="auto"></ins>
   </header>
 
   <section class="post-content">
-    <!-- google_ad_section_start -->
-    {{ content }}
-    <!-- google_ad_section_end -->
+    <div class="container">
+      <!-- google_ad_section_start -->
+      {{ content }}
+      <!-- google_ad_section_end -->
+    </div>
   </section>
-  <ins class="adsbygoogle adslot2" data-ad-client="ca-pub-3538270718430385"
+
+  <ins class="adsbygoogle adslot adslot-2" data-ad-client="ca-pub-3538270718430385"
     data-ad-slot="6035042824" data-ad-format="auto"></ins>
 
-  <footer class="post-footer">
-    <ul class="share-buttons">
-      <h3>Share on a Social Network</h3>
+  <section class="post-related">
+    <div class="container">
+      {% include related.html %}
+    </div>
+  </section>
 
-      <li>
-        <a class="fa fa-facebook-square fa-2x" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Facebook"></a>
-      </li>
+  <section class="post-comments">
+    <div class="container">
+      <ins class="adsbygoogle adslot adslot-3" data-ad-client="ca-pub-3538270718430385" data-ad-slot="5352451624" data-ad-format="auto"></ins>
 
-      <li>
-        <a class="fa fa-twitter-square fa-2x" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" title="Share on Twitter"></a>
-      </li>
-
-      <li>
-        <a class="fa fa-google-plus-square fa-2x" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share on Google+"></a>
-      </li>
-
-      <li>
-        <a class="fa fa-reddit-square fa-2x" href="http://www.reddit.com/submit?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" title="Submit to Reddit"></a>
-      </li>
-
-      <li>
-        <a class="fa fa-linkedin-square fa-2x" href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title}}&summary={{ page.excerpt }}" target="_blank" title="Share on LinkedIn"></a>
-      </li>
-    </ul>
-
-    <ul class="post-related">
-      <h3>Related Posts</h3>
-      {% for post in site.related_posts limit: 5 %}
-      <li class="media">
-        <span class="media-content">
-          <h4>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h4>
-
-          {{ post.excerpt }}
-        </span>
-      </li>
-      {% endfor %}
-    </ul>
-
-    {% if page.related_books %}
-      <ul class="post-related">
-        <h3>Related Books</h3>
-
-        {% for book in page.related_books %}
-        <li class="media">
-          <a class="media-thumbnail" href="{{ book.url }}">
-            <img src="{{ book.thumbnail }}" class="image" />
-          </a>
-
-          <span class="media-content">
-            <h4>
-              <a href="{{ book.url }}" target=="_blank">{{ book.title }}</a>
-            </h4>
-
-            {{ book.excerpt }}
-          </span>
-        </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-
-    <ins class="adsbygoogle adslot3" data-ad-client="ca-pub-3538270718430385" data-ad-slot="5352451624" data-ad-format="auto"></ins>
-
-    <div class="comments">
+      <h2>Comments</h2>
       {% include disqus.html %}
     </div>
-
-  </footer>
+  </section>
 </article>
+
+<script type="text/javascript" src="/jquery.floating-share.min.js"></script>
+<script>
+  $(function() {
+    $("body").floatingShare({
+        place: "top-left", // alternatively top-right
+        counter: true, // set to false to hide counters of pinterest, facebook, twitter, linkedin and google-plus
+        buttons: ["facebook","twitter","google-plus","linkedin","envelope","stumbleupon","pinterest"], // all of the currently avalaible social buttons
+        title: document.title, // your title, default is current page's title
+        url: window.location.href,  // your url, default is current page's url
+        text: "share with ", // the title of a tags
+        description: $("meta[name='description']").attr("content"), // your description, default is current page's description
+        popup_width: 400, // the sharer popup's width, default is 400px
+        popup_height: 300 // the sharer popup's width, default is 300px
+    });
+  });
+</script>
 
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});

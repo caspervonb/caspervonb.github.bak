@@ -1,29 +1,14 @@
+<ul class="social-buttons">
 {% if site.rss %}
-<li>
-	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.str_rss_follow }}">
-		<i class="fa fa-fw fa-rss"></i>
-	</a>
-</li>
-{% endif %}
 
-{% if site.feedburner %}
-<li>
-	<a href="https://feeds.feedburner.com/{{ site.feedburner }}" title="{{ site.str_rss_follow }}">
-		<i class="fa fa-fw fa-rss"></i>
-	</a>
-</li>
 {% endif %}
 
 {% if site.email %}
-<li>
-	<a href="mailto:{{ site.email }}" title="{{ site.email }}">
-		<i class="fa fa-fw fa-envelope"></i>
-	</a>
-</li>
+
 {% endif %}
 
 {% if site.behance %}
-<li>
+<li class="follow-btn">
 	<a href="https://www.behance.net/{{ site.behance }}" title="Follow on Behance">
 		<i class="fa fa-fw fa-behance"></i>
 	</a>
@@ -31,7 +16,7 @@
 {% endif %}
 
 {% if site.bitbucket %}
-<li>
+<li class="follow-btn">
 	<a href="https://bitbucket.org/{{ site.bitbucket }}" title="Follow on Bitbucket">
 		<i class="fa fa-fw fa-bitbucket"></i>
 	</a>
@@ -39,7 +24,7 @@
 {% endif %}
 
 {% if site.dribbble %}
-<li>
+<li class="follow-btn">
 	<a href="https://dribbble.com/{{ site.dribbble }}" title="Follow on Dribbble">
 		<i class="fa fa-fw fa-dribbble"></i>
 	</a>
@@ -47,7 +32,7 @@
 {% endif %}
 
 {% if site.facebook %}
-<li>
+<li class="follow-btn">
 	<a href="https://www.facebook.com/{{ site.facebook }}" title="Follow on Facebook">
 		<i class="fa fa-fw fa-facebook"></i>
 	</a>
@@ -55,7 +40,7 @@
 {% endif %}
 
 {% if site.flickr %}
-<li>
+<li class="follow-btn">
 	<a href="https://www.flickr.com/photos/{{ site.flickr }}" title="Follow on Flickr">
 		<i class="fa fa-fw fa-flickr"></i>
 	</a>
@@ -63,15 +48,11 @@
 {% endif %}
 
 {% if site.github %}
-<li>
-	<a href="https://github.com/{{ site.github }}" title="Follow on GitHub">
-		<i class="fa fa-fw fa-github"></i>
-	</a>
-</li>
+
 {% endif %}
 
 {% if site.google_plus %}
-<li>
+<li class="follow-btn">
 	<a href="https://plus.google.com/{{ site.google_plus }}" title="Follow on Google+">
 		<i class="fa fa-fw fa-google-plus"></i>
 	</a>
@@ -79,7 +60,7 @@
 {% endif %}
 
 {% if site.instagram %}
-<li>
+<li class="follow-btn">
 	<a href="http://instagram.com/{{ site.instagram }}" title="Follow on Instagram">
 		<i class="fa fa-fw fa-instagram"></i>
 	</a>
@@ -87,7 +68,7 @@
 {% endif %}
 
 {% if site.linkedin %}
-<li>
+<li class="follow-btn">
 	<a href="{{ site.linkedin }}" title="Follow on LinkedIn">
 		<i class="fa fa-fw fa-linkedin"></i>
 	</a>
@@ -95,7 +76,7 @@
 {% endif %}
 
 {% if site.pinterest %}
-<li>
+<li class="follow-btn">
 	<a href="http://www.pinterest.com/{{ site.pinterest }}" title="Follow on Pinterest">
 		<i class="fa fa-fw fa-pinterest"></i>
 	</a>
@@ -103,7 +84,7 @@
 {% endif %}
 
 {% if site.reddit %}
-<li>
+<li class="follow-btn">
 	<a href="https://www.reddit.com/user/{{ site.reddit }}" title="Follow on Reddit">
 		<i class="fa fa-fw fa-reddit"></i>
 	</a>
@@ -111,7 +92,7 @@
 {% endif %}
 
 {% if site.soundcloud %}
-<li>
+<li class="follow-btn">
 	<a href="https://soundcloud.com/{{ site.soundcloud }}" title="Follow on SoundCloud">
 		<i class="fa fa-fw fa-soundcloud"></i>
 	</a>
@@ -119,7 +100,7 @@
 {% endif %}
 
 {% if site.stack_exchange %}
-<li>
+<li class="follow-btn">
 	<a href="{{ site.stack_exchange }}" title="Follow on Stack Exchange">
 		<i class="fa fa-fw fa-stack-exchange"></i>
 	</a>
@@ -127,7 +108,7 @@
 {% endif %}
 
 {% if site.steam %}
-<li>
+<li class="follow-btn">
 	<a href="http://steamcommunity.com/id/{{ site.steam }}" title="Follow on Steam">
 		<i class="fa fa-fw fa-steam"></i>
 	</a>
@@ -135,7 +116,7 @@
 {% endif %}
 
 {% if site.tumblr %}
-<li>
+<li class="follow-btn">
 	<a href="https://{{ site.tumblr }}.tumblr.com/" title="Follow on Tumblr">
 		<i class="fa fa-fw fa-tumblr"></i>
 	</a>
@@ -143,15 +124,11 @@
 {% endif %}
 
 {% if site.twitter %}
-<li>
-	<a href="https://twitter.com/{{ site.twitter }}" title="Follow on Twitter">
-		<i class="fa fa-fw fa-twitter"></i>
-	</a>
-</li>
+
 {% endif %}
 
 {% if site.youtube %}
-<li>
+<li class="follow-btn">
 	<a href="https://www.youtube.com/user/{{ site.youtube }}" title="Follow on YouTube">
 		<i class="fa fa-fw fa-youtube"></i>
 	</a>
@@ -159,9 +136,6 @@
 {% endif %}
 
 {% if site.gratipay %}
-<li>
-	<a href="https://gratipay.com/{{ site.gratipay }}" title="Support on Gratipay">
-		<i class="fa fa-fw fa-gratipay"></i>
-	</a>
-</li>
+
 {% endif %}
+</ul>

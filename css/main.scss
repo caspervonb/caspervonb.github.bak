@@ -1,18 +1,85 @@
 ---
 ---
-// External
-@import 'external/reset';
-@import 'external/syntax';
+@import "variables.scss";
+@import "utility.scss";
 
-// Base
-@import 'base/variables';
-@import 'base/global';
-@import 'base/utility';
+@import "normalize.scss";
+@import "base.scss";
 
-// Posts
-@import 'layouts/posts';
-@import 'layouts/index';
+@import "syntax";
 
-// Partials
-@import 'includes/header';
-@import 'includes/footer';
+@import "button";
+
+@import "layout";
+@import "media";
+@import "post";
+@import "button";
+
+.masthead {
+  @include clearfix;
+  color: #333333;
+  font-size: 1.2em;
+
+  height: 100px;
+  line-height: 50px;
+
+  a {
+    color: #333333;
+
+    &:hover,
+    &:active {
+      color: #595959;
+    }
+  }
+}
+
+.masthead-brand {
+  float: left;
+}
+
+.masthead-title {
+  float: left;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  line-height: 100px;
+}
+
+.masthead-avatar {
+  float: left;
+  margin: 0 1em;
+}
+
+.masthead-social {
+  float: right;
+  margin-right: 1em;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.content {
+  .header-link {
+    position: absolute;
+    left: 0.5em;
+    right: 0;
+    opacity: 0.05;
+
+    -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+    -moz-transition: opacity 0.2s ease-in-out 0.1s;
+    -ms-transition: opacity 0.2s ease-in-out 0.1s;
+  }
+
+  h2:hover .header-link,
+  h3:hover .header-link,
+  h4:hover .header-link,
+  h5:hover .header-link,
+  h6:hover .header-link {
+    opacity: 1;
+  }
+}
+
+.colophon {
+  text-align: center;
+}
