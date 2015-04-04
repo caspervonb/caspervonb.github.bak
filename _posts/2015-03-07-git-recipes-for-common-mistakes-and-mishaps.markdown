@@ -1,20 +1,12 @@
 ---
 layout: post
 title: Git Recipes for Common Mistakes and Mishaps
-categories: 
+categories:
   - tools
-related_books:
-  - 
-    title: Version Control with Git
-    thumbnail: https://images-na.ssl-images-amazon.com/images/I/51n%2BRSsEmEL._SL160_.jpg
-    excerpt: "Get up to speed on Git for tracking, branching, merging, and managing code revisions. Through a series of step-by-step tutorials, this practical guide takes you quickly from Git fundamentals to advanced techniques, and provides friendly yet rigorous advice for navigating the many functions of this open source version control system."
-    url: http://amzn.to/1KzEgF5
-    
-  - 
-    title: Pro Git
-    thumbnail: https://images-na.ssl-images-amazon.com/images/I/51yUrziP2fL._SL160_.jpg
-    excerpt: Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.
-    url: http://amzn.to/1MeXNGg
+
+recommended_books:
+  - http://amzn.to/1KzEgF5
+  - http://amzn.to/1MeXNGg
 
 redirect_from:
   - /tools/git-recipies-for-the-rest-of-us/
