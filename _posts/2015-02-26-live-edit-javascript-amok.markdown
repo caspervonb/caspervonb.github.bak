@@ -16,6 +16,8 @@ Our development workflow is basically completely broken, a scripting language we
 
 ## Introducing Amok
 
+> Amok v0.12.x simplified the interface a lot, and I haven't had time to rewrite this article yet.
+
 [Amok](http://amokjs.com) is an editor agnostic, standalone tool that gives us the ability to do live editing of our application while it's running without ever having to reload or restart the application. It works by connecting to the browser where our application is already running through a debugging session, so there are no browser side plugins to install, we just have to enable debugging in the target browser by providing it with some flags when launching it.
 
 Since the code is never re-evaluated but re-compiled instead, [side effects](http://en.wikipedia.org/wiki/Side_effect_%28computer_science%29) that would be executed from running the script top to bottom will not be executed, think of it as the existing code being hot patched to the new definitions. In a traditional compiler/debugger toolset this sort of feature would typically be called *edit and continue*.
