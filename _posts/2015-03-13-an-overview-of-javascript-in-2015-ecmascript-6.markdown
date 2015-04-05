@@ -3,6 +3,10 @@ layout: post
 title: An Overview of JavaScript in 2015 (ECMAScript 6)
 categories:
   - javascript
+
+tags:
+  - featured
+
 excerpt: JavaScript is evolving, ECMAScript 2015 (previously known as ECMAScript 6) is sixth edition of JavaScript, and is the upcoming version of the ECMAScript standard, this standard previously said to be ratified in late 2013, then again in late 2014 is now targeting ratification in June 2015, at this point all features have been frozen and specification changes will mostly be editorial nitpicking, so with that in mind lets take a look at what is new in JavaScript in the year 2015.
 
 recommended_books:
