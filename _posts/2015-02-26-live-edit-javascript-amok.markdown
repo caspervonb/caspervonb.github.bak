@@ -2,7 +2,7 @@
 layout: post
 title: Live Edit JavaScript with Amok
 excerpt: Our development workflow is completely broken, It would be much better if we could just edit our application live while its running, and have it continue running after editing without having to reload it nor losing its state.
-
+published: false
 categories:
   - javascript
   - tools
