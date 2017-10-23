@@ -1,0 +1,88 @@
+---
+---
+@import "variables.scss";
+@import "utility.scss";
+
+@import "normalize.scss";
+@import "base.scss";
+
+@import "syntax";
+
+@import "button";
+
+@import "layout";
+@import "adslot";
+@import "media";
+@import "post";
+@import "button";
+
+.masthead {
+  @include clearfix;
+  color: #333333;
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.05);
+
+  height: 100px;
+  line-height: 50px;
+
+  a {
+    color: #333333;
+
+    &:hover,
+    &:active {
+      color: #888a85;
+      transition: 0.25s;
+    }
+  }
+}
+
+.masthead-brand {
+  float: left;
+}
+
+.masthead-title {
+  float: left;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  line-height: 100px;
+}
+
+.masthead-avatar {
+  float: left;
+  margin: 0 1em;
+}
+
+.masthead-social {
+  float: right;
+  margin-right: 1em;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.content {
+  .header-link {
+    position: absolute;
+    left: 0.5em;
+    right: 0;
+    opacity: 0.05;
+
+    -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+    -moz-transition: opacity 0.2s ease-in-out 0.1s;
+    -ms-transition: opacity 0.2s ease-in-out 0.1s;
+  }
+
+  h2:hover .header-link,
+  h3:hover .header-link,
+  h4:hover .header-link,
+  h5:hover .header-link,
+  h6:hover .header-link {
+    opacity: 1;
+  }
+}
+
+.colophon {
+  text-align: center;
+}

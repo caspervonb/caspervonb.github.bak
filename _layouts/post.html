@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post" data-categories="{{ page.categories | join ' ' }}">
+  <header class="post-header">
+    <div class="container">
+      <h1 class="post-title">{{ page.title }}</h1>
+
+      <p class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
+
+        {% if page.author %}
+          - <span class="post-author">{{ page.author }}</span>
+        {% endif %}
+        {% if page.categories %}
+          in <span class="post-categories">
+            {{ page.categories | join ',' }}
+          </span>
+        {% endif %}
+      </p>
+    </div>
+  </header>
+
+  <section class="post-content">
+    <div class="container">
+      <!-- google_ad_section_start -->
+      {{ content }}
+      <!-- google_ad_section_end -->
+    </div>
+  </section>
+
+  <section class="post-recommendations">
+    <div class="container">
+      {% include recommended.html %}
+    </div>
+  </section>
+
+  <section class="post-comments">
+    <div class="container">
+      <h2>Comments</h2>
+      {% include disqus.html %}
+    </div>
+  </section>
+</article>
