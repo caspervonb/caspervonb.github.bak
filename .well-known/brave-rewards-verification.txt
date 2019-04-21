@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: caspervonb.github.io
+Token: cb173732cf2b9219edcf679248e5ef9acb16895ebb7d4b65a7350189aae21029 
