@@ -16,6 +16,8 @@ amazon: caspbeye-20
 analytics: UA-48351156-1
 disqus: caspervonb
 
+include:
+  - .well-known
 permalink: /:categories/:title/
 
 post_thumbnail: https://cloud.githubusercontent.com/assets/157787/6486649/54d38c26-c2c7-11e4-859e-aa463e68b506.png
