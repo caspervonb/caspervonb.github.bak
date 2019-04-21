@@ -23,8 +23,8 @@ post_thumbnail: https://cloud.githubusercontent.com/assets/157787/6486649/54d38c
 # Build settings
 paginate: 5
 paginate_path: "/page:num"
+markdown: kramdown
 
-lsi: true
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
